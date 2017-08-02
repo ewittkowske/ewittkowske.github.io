@@ -1,0 +1,90 @@
+ body{
+ 	font-family: "Montserrat", sans-serif;
+ 	background-image: url("./Images/06.jpg");
+ 	background-size: cover;
+ }
+ .menuItem{
+ 	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	margin: 1%;
+	padding: 1%;
+	display: inline-block;
+
+ }
+ 
+ .container{
+ 	font-family: "Montserrat", sans-serif;
+ 	margin: auto;
+ 	position: relative;
+ 	padding:1%;
+ }
+ header{
+ 	font-family: "Montserrat", sans-serif;
+ 	text-align: center;
+ 	background-color: pink;
+ 	font-style: bold;
+ }
+ #image1{
+  opacity: .75;
+  
+ }
+ #image2{
+ 	opacity: .75;
+  
+ }
+ #image3{
+ 	opacity: .75;
+  
+ }
+ #image4{
+ 	opacity: .75;
+  
+ }
+ #projects {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  left: 43%;
+  top: 8%;
+}
+#animations {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  left: 44%;
+  top: 37%;
+}
+#resume {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  left: 45%;
+  top: 62%;
+}
+#technical {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  left: 43%;
+  top: 85%;
+}
+#image1:hover {
+    opacity: .95;
+}
+#image2:hover {
+    opacity: .95;
+}
+#image3:hover {
+    opacity: .95;
+}
+#image4:hover {
+    opacity: .95;
+}
