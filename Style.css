@@ -1,90 +1,172 @@
  body{
  	font-family: "Montserrat", sans-serif;
- 	background-image: url("./Images/06.jpg");
- 	background-size: cover;
- }
- .menuItem{
- 	font-family: "Montserrat", sans-serif;
-	text-align: center;
-	margin: 1%;
-	padding: 1%;
-	display: inline-block;
-
+ 	/*background-image: url("./Images/bg.jpg");*/
+  background-color:#bdb2df;
+ 	background-size: auto;
+  background-repeat: no-repeat;
+  height: 100%;
  }
  
- .container{
+ #container{
  	font-family: "Montserrat", sans-serif;
- 	margin: auto;
- 	position: relative;
+  width:80%;
  	padding:1%;
- }
- header{
- 	font-family: "Montserrat", sans-serif;
- 	text-align: center;
- 	background-color: pink;
- 	font-style: bold;
- }
- #image1{
-  opacity: .75;
+  margin-left:15%;
+  text-align: center;
   
  }
- #image2{
- 	opacity: .75;
+ /* rest of webpage */
+.profile{
+  border-radius:50%; 
+  border-color: white;
+  border-width: 2%;
   
- }
- #image3{
- 	opacity: .75;
+}
+#contact{
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
   
- }
- #image4{
- 	opacity: .75;
-  
- }
- #projects {
-  z-index: 100;
-  position: absolute;
+}
+
+/* nav menu  template from w3schools.com*/
+ 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    height: 100%;
+    background-color: #333;
+    border-radius: 25px;
+    position: fixed; 
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 6% 12%;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+/* The Modal (background) template from w3schools.com */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border-radius: 25px;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#myBtn {
+  background-color: white;
+    color: black;
+    border: 2px solid #333;
+    border-radius: 25px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-right: 10%;
+
+
+  }
+ #myBtn:hover{
+    background-color: #333;
+    color: white;
+}
+#myBtn2{
+  background-color: white;
+    color: black;
+    border: 2px solid #333;
+    padding: 5%;
+    border-radius: 25px;
+  }
+ #myBtn2:hover{
+    background-color: #333;
+    color: white;
+}
+/*skills section*/
+.skills {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
   color: white;
-  font-size: 35px;
-  font-weight: bold;
-  left: 43%;
-  top: 8%;
 }
-#animations {
-  z-index: 100;
-  position: absolute;
-  color: white;
-  font-size: 35px;
-  font-weight: bold;
-  left: 44%;
-  top: 37%;
-}
-#resume {
-  z-index: 100;
-  position: absolute;
-  color: white;
-  font-size: 35px;
-  font-weight: bold;
-  left: 45%;
-  top: 62%;
-}
-#technical {
-  z-index: 100;
-  position: absolute;
-  color: white;
-  font-size: 35px;
-  font-weight: bold;
-  left: 43%;
-  top: 85%;
-}
-#image1:hover {
-    opacity: .95;
-}
-#image2:hover {
-    opacity: .95;
-}
-#image3:hover {
-    opacity: .95;
-}
-#image4:hover {
-    opacity: .95;
-}
+
+.html {width: 40%; background-color: #333; border-radius: 25px; }
+.css {width: 40%; background-color: #333; border-radius: 25px; }
+.js {width: 20%; background-color: #333; border-radius: 25px; }
+.c {width: 90%; background-color: #333; border-radius: 25px; }
+.maya {width: 75%; background-color: #333; border-radius: 25px; }
+.java {width: 65%; background-color: #333; border-radius: 25px; }
+.microsoft {width: 65%; background-color: #333; border-radius: 25px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

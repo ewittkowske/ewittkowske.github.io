@@ -5,39 +5,177 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="Style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body >
-<header>
-<b>Emily Wittkowske</b><br>
-<b>University of Southern California</b><br>
-<b>Computer Science with a Games Emphasis</b><br>
+<ul>
+  <li><a href="#about">About</a></li>
+  <li><a href="#portfolio">Portfolio</a></li>
+  <li><a href="#contact">Contact</a></li>
+ 
+</ul>
 
-</header>
+<div id= "container">
+  <div id="about">
+  <img class="profile" src="./Images/LinkedInProfile.jpg" alt="profile picture" width="20%"><br>
+  <b>Emily Wittkowske</b><br>
+  <b>University of Southern California - B.S Computer Science(Games) - Class of 2019</b><br>
+  </div>
+</div>
+<div id="container">
+Member of Association of Computing Machinery, USC Photography Club, Society of Women Engineers, USC Rock Climbing Club<br> 
+      GPA: 3.00<br>
+<!-- Trigger/Open Modal 1 -->
+<button id="myBtn">Work Experience</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><h2> Work Experience</h2>
+    <h3>Field Supervisor for USC Transportation Services November 2015&#8210;present</h3>
+    <p>
+      Managing a safety transportation service that provides University of Southern California students a ride home late at night <br> 
+      Assigning cars, iPads, and calls to drivers, answering 10+ calls, and addressing customer concerns<br> 
+      Providing customer service experience on the phone as well as face to face interactions with clients<br> 
+      Rated &ldquo;Highest Rated Driver&rdquo; by over 100 customers in the month of December 2015<br> 
+      Recognized as &ldquo;Cruiser of the Month&rdquo; for outstanding customer service and work ethic in the month of September 2016<br> 
+
+    </p>
+    <h3> Joint Educational Project January 2017&#8210;May 2017</h3>
+    <p>
+      Assisting in lesson plan development to teach a group of 30 fifth graders fundamentals of Computer Science such as:<br>
+     sorting algorithms, conditional statements, object oriented design, coding design, and programming in Java with Eclipse
+    </p>
+    <h3>Teaching Assistant for Sigma Coding July&#8210;August 2017</h3>
+    <p>
+      Implemented differentiated instruction to facilitate learning among a diverse group of students<br>
+      Mentored students on technical skills with programs such as Scratch, Sublime, and Eclipse. <br>
+      Taught students the fundamental concepts of computer science and web development through languages such as Java, Scratch, and HTML.<br>
+    </p></p>
+  </div>
+
+</div>
+      
+      <!-- Second modal -->
+      <button id="myBtn2">Relevant Coursework</button>
+
+<!-- The Modal -->
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close2">&times;</span>
+    <p>
+          <h2> Relevant Coursework</h2>
+          <h3>Data Structures and Object Oriented Design</h3>
+          <p>
+        Scrabble Game(C/C++) &#8210; Utilized knowledge of QT, I/0 Streams, and common database structures such as Trees, sets, and object oriented<br>
+         programming to create an interactive Scrabble game that can be played with 8 players or a programmed AI. 
+        </p>
+        <h3>Principles of Software Development</h3>
+        <p>
+        Cinemate(Java/JavaScript/HTML/CSS) &#8210; Utilized knowledge of servlets, JSP’s, software engineering, and HTML/CSS to create a movie-rating social media <br>
+        application. Users can create accounts, follow/unfollow other users, like/rate/dislike movies, and see their actions as well as the actions of <br>
+        their followers. <br>
+        TeamTime(Java/HTML/CSS) &#8210; Utilized knowledge of software engineering and networking to build a web application designed to help users organize<br>
+         group projects. The app helps users manage schedules and tasks as well as communicate easily with group members. 
+      </p>
+      <h3>Discrete Methods in Computer Science</h3>
+      <p>
+        Breadth-first Search, depth-first search, Dijkstra’s Algorithm, number theory 
+        </p>
+      <h3>Introduction to Algorithms </h3>
+      <p>
+        Dynamic Programming, Greedy Algorithms, Divide and Conquer 
+        <p>
+      <h3>Calculus I, II, III, Linear Algebra</h3>
+    </p>
+  </div>
+
+    
+
+    </div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+var modal2= document.getElementById('myModal2');
+// Get the buttons that open modals
+var btn = document.getElementById("myBtn");
+var btn2= document.getElementById("myBtn2");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var span2=document.getElementsByClassName("close2")[0];
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+span2.onclick = function() {
+    modal2.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+</script>
+<div id="container">
+<h1>Technical Skills</h1>
+
+<p>HTML</p>
 <div class="container">
-		<div class= "menuItem">
-			<a href="projects.html"><img id="image1" src="./Images/01.png" width="30%"></a>
-			<p id="projects">
-			Projects
-			</p>
-		</div>
-		<div class="menuItem">
-			<a href="animations.html"><img id="image2" src="./Images/02.png" width="30%"></a>
-			<p id="animations">
-			Animations
-			</p>
-		</div>
-		<div class="menuItem">
-			<a href="resume.html"><img id="image3" src="./Images/04.png" width="30%"></a>
-			<p id="resume">
-			Resume
-			</p>
-		</div>
-		<div class="menuItem">
-		<a href="technical.html"><img id="image4" src="./Images/06.png" width="30%"></a>
-			<p id="technical">
-			Techinal skills
-			</p>
-		</div>
-	</div>
+  <div class="skills html">Moderate</div>
+</div>
+
+<p>CSS</p>
+<div class="container">
+  <div class="skills css">Moderate</div>
+</div>
+
+<p>JavaScript</p>
+<div class="container">
+  <div class="skills js">Beginner</div>
+</div>
+
+<p>C/C++</p>
+<div class="container">
+  <div class="skills c">Experienced</div>
+</div>
+<p>Java</p>
+<div class="container">
+  <div class="skills java">Proficient</div>
+</div>
+<p>Maya</p>
+<div class="container">
+  <div class="skills maya">Proficient</div>
+</div>
+<p>Microsoft Office</p>
+<div class="container">
+  <div class="skills microsoft">Proficient</div>
+</div>
+
+</div>
+<div id="container">
+<a href="https://github.com/ewittkowske" ><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+<a href="https://www.linkedin.com/in/emily-wittkowske-736a04133" ><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+</div>
+
 </body>
 </html>
