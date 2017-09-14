@@ -13,8 +13,8 @@ body{
   font-family: "Montserrat", sans-serif;
   width:80%;
   padding:1%;
+  padding-left: 30%;
   margin-left:15%;
-  text-indent:11.25%;
 
  }
 /* The actual timeline (the vertical ruler) */
