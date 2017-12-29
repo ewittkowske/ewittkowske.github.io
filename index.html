@@ -1,171 +1,266 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Emily Wittkowske</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="Style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body >
-<ul>
-  <li><a href="#about">About</a></li>
-  <li><a href="Portfolio.html">Portfolio</a></li>
-  <li><a href="#contact">Contact</a></li>
- 
-</ul>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #818181;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  .skills {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white;
+}
+  #container{
+  font-family: "Montserrat", sans-serif;
+  width:80%;
+  padding:1%;
+  margin-left:15%;
+  text-align: center;
+}
+.html {width: 40%; background-color: #333; border-radius: 25px; }
+.c {width: 90%; background-color: #333; border-radius: 25px; }
+.maya {width: 75%; background-color: #333; border-radius: 25px; }
 
-<div id= "container">
-  <div id="about">
-  <img class="profile" src="./Images/LinkedInProfile.jpg" alt="profile picture" width="20%"><br>
-  <b>Emily Wittkowske</b><br>
-  <b>University of Southern California - B.S Computer Science Games - Class of 2019</b><br>
-  </div>
-</div>
-<div id="container">
-Member of Association of Computing Machinery, USC Photography Club, Society of Women Engineers, USC Rock Climbing Club<br> 
-      GPA: 3.00<br>
-<!-- Trigger/Open Modal 1 -->
-<button id="myBtn">Work Experience</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p><h2> Work Experience</h2>
-    <h3>Field Supervisor for USC Transportation Services November 2015&#8210;present</h3>
-    <p>
-      Managing a safety transportation service that provides University of Southern California students a ride home late at night <br> 
-      Assigning cars, iPads, and calls to drivers, answering 10+ calls, and addressing customer concerns<br> 
-      Providing customer service experience on the phone as well as face to face interactions with clients<br> 
-      Rated &ldquo;Highest Rated Driver&rdquo; by over 100 customers in the month of December 2015<br> 
-      Recognized as &ldquo;Cruiser of the Month&rdquo; for outstanding customer service and work ethic in the month of September 2016<br> 
-
-    </p>
-    <h3> Joint Educational Project January 2017&#8210;May 2017</h3>
-    <p>
-      Assisting in lesson plan development to teach a group of 30 fifth graders fundamentals of Computer Science such as:<br>
-     sorting algorithms, conditional statements, object oriented design, coding design, and programming in Java with Eclipse.
-    </p>
-    <h3>Teaching Assistant for Sigma Coding July&#8210;October 2017</h3>
-    <p>
-      Implemented differentiated instruction to facilitate learning among a diverse group of students<br>
-      Mentored students on technical skills with programs such as Scratch, Sublime, and Eclipse. <br>
-      Taught students the fundamental concepts of computer science and web development through languages such as Java, Scratch, and HTML.<br>
-    </p></p>
-  </div>
-
-</div>
-      
-      <!-- Second modal -->
-      <button id="myBtn2">Relevant Coursework</button>
-
-<!-- The Modal -->
-<div id="myModal2" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close2">&times;</span>
-    <p>
-          <h2> Relevant Coursework</h2>
-          <h3>Data Structures and Object Oriented Design</h3>
-        <h3>Principles of Software Development</h3>
-      <h3>Discrete Methods in Computer Science</h3>
-      <p>
-        Breadth-first Search, depth-first search, Dijkstra’s Algorithm, number theory 
-        </p>
-      <h3>Introduction to Algorithms </h3>
-      <p>
-        Dynamic Programming, Greedy Algorithms, Divide and Conquer 
-        <p>
-        <h3> Video Game Programming Algorithms and Techniques&#40;In progress&#41;</h3> 
-        <h3>Introduction to Computer Systems&#40;In progress&#41;</h3>
-        <p>Computer organization, entity abstraction and representation, program execution, code optimization, memory usage, exception handling, processing control, computer performance</p>
-      <h3>Calculus I, II, III, Linear Algebra</h3>
-    </p>
-  </div>
+  .bg-grey {
+      background-color: #222222;
+  }
+  .bg-white{
+    background-color: white;
+  }
+     .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #222222;
+      padding: 25px;
+    }
+    /*Add background to jumbotron*/
+    .jumbotron{
+    background: url('./Images/Night.JPG') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+    }
 
     
+    
+  </style>
+</head>
+<body>
 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Emily Wittkowske</a>
     </div>
-</div>
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-var modal2= document.getElementById('myModal2');
-// Get the buttons that open modals
-var btn = document.getElementById("myBtn");
-var btn2= document.getElementById("myBtn2");
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-var span2=document.getElementsByClassName("close2")[0];
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-btn2.onclick = function() {
-    modal2.style.display = "block";
-}
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-span2.onclick = function() {
-    modal2.style.display = "none";
-}
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-window.onclick = function(event) {
-    if (event.target == modal2) {
-        modal2.style.display = "none";
-    }
-}
-</script>
-<div id="container">
+<div class="jumbotron">
+  <div class="container text-center">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Emily Wittkowske</h1>      
+    <p>Computer Science | Design | Photography</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+</div>
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+    <h2>About</h2>
+       <h4>
+          I am a Computer Science Games major at the University of Southern California. My area of focus is 
+          computer graphics and animation. <br>
+          I am passionate about photography and design. <br>
+
+       </h4>
+       
+    </div>
+  </div>
+</div>
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="Images/CSCI201.png" alt="Cinemate" width="400" height="400">
+        <p><strong>Cinemate</strong></p>
+        <p>Movie rating web application where users can rate movies and see how other users rated movies.
+        <br><br>
+        I also helped develop an application called TeamTime which allows users to create group accounts
+        to manage group work. It allows team members to log progress, create meeting times, and receive alerts
+        about upcoming deadlines.<br><br>
+         Code samples available upon request.<br>
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="Images/parkour.png" alt="Parkour" width="400" height="400">
+        <p><strong>Parkour</strong></p>
+        <p>3D game developed in C++ allows players to run, jump, and wall climb through a course
+        to colect coins.
+        <br><br>
+        I have also develped other 2D and 3D games. Some of which include an infinite runner, a 
+        2 player tank battle, and a tower defense game.<br><br> 
+
+        Code samples available upon request.<br> </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="Images/488Game.png" alt="San Francisco" width="200" height="300">
+        <p><strong>Journey to Planet X</strong></p>
+        <p>Earth is dying and you have been chosen to venture out into space in search of answers. Work with fellow researchers to reach Planet X. Each character has unique abilities to help sustain the limited resources on board.
+        <br>
+        This was first designed as board game and is currently being adapted to a digital version. </p>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="col-sm-12 bg-white " >
 <h1>Technical Skills</h1>
 
 <p>C/C++</p>
 <div class="container">
   <div class="skills c">Experienced</div>
 </div>
-<p>Maya</p>
+<p>Maya, Java, Microsoft Office, MySQL</p>
 <div class="container">
   <div class="skills maya">Proficient</div>
 </div>
-<p>Java</p>
-<div class="container">
-  <div class="skills java">Proficient</div>
-</div>
-<p>Microsoft Office</p>
-<div class="container">
-  <div class="skills microsoft">Proficient</div>
-</div>
 
-<p>HTML</p>
+<p>HTML, CSS, Photoshop, Illustrator</p>
 <div class="container">
   <div class="skills html">Moderate</div>
 </div>
+<br>
+</div>
+</div>
+</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+    <li data-target="#myCarousel" data-slide-to="6"></li>
+    <li data-target="#myCarousel" data-slide-to="7"></li>
+  </ol>
 
-<p>CSS</p>
-<div class="container">
-  <div class="skills css">Moderate</div>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="Images/HalfDome.JPG" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="Images/Butterfly.JPG" alt="Chicago">
+    </div>
+
+    <div class="item" >
+      <img src="Images/Ragnar1.JPG" alt="New York">
+    </div>
+
+    <div class="item" >
+      <img src="Images/Bliss1.JPG" alt="New York">
+    </div>
+
+    <div class="item" >
+      <img src="Images/Ragnar2.JPG" alt="New York">
+    </div>
+
+    <div class="item" >
+      <img src="Images/Bliss2.JPG" alt="New York">
+    </div>
+
+    <div class="item" >
+      <img src="Images/Ragnar3.JPG" alt="New York">
+    </div>
+
+    <div class="item" >
+      <img src="Images/Bliss3.JPG" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-<p>JavaScript</p>
-<div class="container">
-  <div class="skills js">Beginner</div>
-</div>
-</div>
-<div id="container">
-<a href="https://github.com/ewittkowske" ><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+<footer id="footer" class="container-fluid text-center">
+  <p>
+    <a href="https://github.com/ewittkowske" ><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
 <a href="https://www.linkedin.com/in/emily-wittkowske-736a04133" ><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-</div>
+  </p>
+</footer>
 
 </body>
 </html>
